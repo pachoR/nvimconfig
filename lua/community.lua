@@ -18,8 +18,6 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.colorscheme.sonokai" },
-  { import = "astrocommunity.colorscheme.nordic" },
-  { import = "astrocommunity.colorscheme.hybrid" },
   { import = "astrocommunity.colorscheme.vscode-nvim" }
 
 }

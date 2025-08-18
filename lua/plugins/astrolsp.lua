@@ -26,7 +26,7 @@ return {
           cpp,
           c,
           python,
-          -- "go",
+          go,
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
