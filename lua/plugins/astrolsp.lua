@@ -47,7 +47,20 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      gopls = {
+        cmd = { "gopls" },
+        filetypes = { "go", "gomod" },
+        root_dir = require("lspconfig.util").root_pattern("go.work", "go.mod", ".git"),
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+              shadow = true,
+            },
+            staticcheck = true,
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
