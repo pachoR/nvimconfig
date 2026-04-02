@@ -77,11 +77,19 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+        ["<leader>s"] = {
+          function() require("grug-far").open() end,
+          desc = "Search",
+        },
       },
 
       v = {
         ["<Tab>"] = { ">gv", desc = "Indent" },
         ["<S-Tab>"] = { "<gv", desc = "Unindent" },
+        ["<leader>s"] = {
+          function() require("grug-far").with_visual_selection() end,
+          desc = "Search",
+        },
       },
     },
   },
