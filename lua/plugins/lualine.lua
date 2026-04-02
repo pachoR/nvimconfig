@@ -12,9 +12,9 @@ return {
       lualine_a = { "mode" },
       lualine_b = { "filename" },
       lualine_c = {},
-      lualine_x = { "diff" },
-      lualine_y = { "filetype" },
-      lualine_z = { "location" },
+      lualine_x = { "location" },
+      lualine_y = { "filesize" },
+      lualine_z = { "filetype" },
     }
 
     return opts
