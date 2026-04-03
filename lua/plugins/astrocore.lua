@@ -80,6 +80,9 @@ return {
         -- toggle term
         ["<leader>tt"] = { "<cmd>ToggleTerm direction=horizontal<cr>" },
         ["<leader>tv"] = { "<cmd>ToggleTerm direction=vertical<cr>" },
+
+        -- telescope colorscheme
+        ["<leader>tc"] = { "<cmd>Telescope colorscheme<cr>" },
       },
 
       v = {
