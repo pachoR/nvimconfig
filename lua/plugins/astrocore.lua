@@ -72,16 +72,15 @@ return {
         },
         ["<leader>w"] = { "<cmd>bd<cr>", desc = "Close buffer" },
         ["<leader>W"] = { "<cmd>w<cr>", desc = "Save file" },
-        -- tables with just a `desc` key will be registered with which-key if it's installed
-        -- this is useful for naming menus
-        -- ["<Leader>b"] = { desc = "Buffers" },
 
-        -- setting a mapping to false will disable it
-        -- ["<C-S>"] = false,
         ["<leader>s"] = {
           function() require("grug-far").open() end,
           desc = "Search",
         },
+
+        -- toggle term
+        ["<leader>tt"] = { "<cmd>ToggleTerm direction=horizontal<cr>" },
+        ["<leader>tv"] = { "<cmd>ToggleTerm direction=vertical<cr>" },
       },
 
       v = {
