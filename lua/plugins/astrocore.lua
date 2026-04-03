@@ -70,7 +70,8 @@ return {
           end,
           desc = "Close buffer from tabline",
         },
-
+        ["<leader>w"] = { "<cmd>bd<cr>", desc = "Close buffer" },
+        ["<leader>W"] = { "<cmd>w<cr>", desc = "Save file" },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         -- ["<Leader>b"] = { desc = "Buffers" },
