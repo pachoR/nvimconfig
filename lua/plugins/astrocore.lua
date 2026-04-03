@@ -70,8 +70,7 @@ return {
           end,
           desc = "Close buffer from tabline",
         },
-        ["<leader>w"] = { "<cmd>bd<cr>", desc = "Close buffer" },
-        ["<leader>W"] = { "<cmd>w<cr>", desc = "Save file" },
+        ["<leader>W"] = { "<cmd>bd<cr>", desc = "Close buffer" },
 
         ["<leader>s"] = {
           function() require("grug-far").open() end,
